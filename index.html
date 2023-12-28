@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>methat</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6bfe4e2f36.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo met.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Web development <span>₹999</span></h1>
+                <h1>Learn in <span>മലയാളം</span> </h1>
+                <br>
+                <h2><span class="auto-type"></span></h2>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="profile.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                         nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                         reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                          nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                           sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                           <div class="tab-title">
+                            <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                            <p class="tab-links" onclick="opentab('experince')">Experince</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                           </div>
+                           <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI?UX</span><br>Designing Web/app interfaces</li>
+                                <li><span>Web development</span><br>Web app development</li>
+                                <li><span>App development</span><br>Building android/ios apps</li>
+                            </ul>
+                           </div>
+                           <div class="tab-contents" id="experince">
+                            <ul>
+                                <li><span>2021- current</span><br>UI/UX Design trainer at ET institute</li>
+                                <li><span>2019-2021</span><br>Team lead at starAPP LLC</li>
+                                <li><span>2017-2019</span><br>UI/UX design executive at coin Digital LTD</li>
+                                <li><span>2016-2017</span><br>Internship at ekart ecommerce</li>
+                            </ul>
+                           </div>
+                           <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2016</span><br>UI/UX Design traning at ET institute</li>
+                                <li><span>2016</span><br>MBA from MIT Bangalore</li>
+                                <li><span>2014</span><br>BBA from ISM Bangalore</li>
+                            </ul>
+                           </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1> 
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt</p>
+                        <a href="#">Learn maore</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt</p>
+                        <a href="#">Learn maore</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt</p>
+                        <a href="#">Learn maore</a>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1> 
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.png" >
+                    <div class="layer">
+                        <h3>social media app</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png" >
+                    <div class="layer">
+                        <h3>Music app</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                        
+                </div>
+                <div class="work">
+                    <img src="work-3.png" >
+                    <div class="layer">
+                        <h3>Online shoping app</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                       </div>     
+                </div>
+            </div>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">contact me</h1> 
+                <p><i class="fa-solid fa-envelope"></i>methatacademy@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>9744658403</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61552583365229&mibextid=kFxxJD"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/methat_academy?igsh=eWhpdGhqemoyZWZp"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://youtube.com/@MetHatAcademy?si=_SX43SE6VoBivABX"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://x.com/MetHat_Academy?t=d_5XqDb2oGxqUDybasXTow&s=09"><i class="fa-brands fa-square-x-twitter"></i></a>
+                </div>
+                <a href="my-cv.pdf" download class="btn btn2">Downloards</a>
+                </div>
+                
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p><i class="fa-regular fa-copyright"></i>  Copyright methat academy</p>
+        </div>
+    </div>
+   
+   </script>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right ="0";
+        }
+        function closemenu(){
+            sidemenu.style.right ="-200px";
+        }
+        
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxKftfHZNZkMbnbu-EpXdmidkebq2g2v9BZ73wFzp7dZWc9eBOlSb-E4SahYnqr32braQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent succesfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('.auto-type', {
+      strings: ['Lifetime support', '1:1 Live Doubt solving','Personal Mentorship'],
+      typeSpeed: 150,
+      backspeed: 150,
+      loop: true
+    });
+  </script>
+</body>
+
+</html> 
