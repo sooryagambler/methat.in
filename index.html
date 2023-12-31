@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>methat</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6bfe4e2f36.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo met.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">                
+                <h1>Web development <span>₹999</span></h1>
+                <h1>Learn in <span>മലയാളം</span> </h1>
+                <br>
+                <h2><span class="auto-type"></span></h2>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="profile.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                         nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                         reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                          nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                           sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                           <div class="tab-title">
+                            <p class="tab-links active-link" onclick="opentab('skills')">WHY US?</p>
+                            <p class="tab-links" onclick="opentab('experince')">Experince</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                           </div>
+                           <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Lifetime support</span><br>Designing Web/app interfaces</li>
+                                <li><span>1:1 Live Doubt solving</span><br>Web app development</li>
+                                <li><span>Personal Mentorship</span><br>Building android/ios apps</li>
+                                <li><span>Poject based classes</span><br>Building android/ios apps</li>
+                            </ul>
+                           </div>
+                           <div class="tab-contents" id="experince">
+                            <ul>
+                                <li><span>2021- current</span><br>UI/UX Design trainer at ET institute</li>
+                                <li><span>2019-2021</span><br>Team lead at starAPP LLC</li>
+                                <li><span>2017-2019</span><br>UI/UX design executive at coin Digital LTD</li>
+                                <li><span>2016-2017</span><br>Internship at ekart ecommerce</li>
+                            </ul>
+                           </div>
+                           <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2016</span><br>UI/UX Design traning at ET institute</li>
+                                <li><span>2016</span><br>MBA from MIT Bangalore</li>
+                                <li><span>2014</span><br>BBA from ISM Bangalore</li>
+                            </ul>
+                           </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1> 
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt</p>
+                        <a href="#">Learn maore</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt</p>
+                        <a href="#">Learn maore</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt</p>
+                        <a href="#">Learn maore</a>
+                </div>
+            </div>  
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="coding 1.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="coding 18.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="coding 4.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="coding 6.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="coding 2.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="coding 10.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="coding 19.jpg" alt=""></div>
+     
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+    </div>
+
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Tutorials</h1> 
+            <div class="work-list">
+                <div class="work">
+                    <img src="html logo.png" >
+                    <div class="layer">
+                        <h2>HTML</h2>
+                        <p>HTML is the standard markup language for Web pages.
+                            With HTML you can create your own Website. 
+                            HTML is easy to learn - You will enjoy it!</p>
+                            <a href="#"><i class="fa-brands fa-html5"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="css logo.png" >
+                    <div class="layer">
+                        <h2>CSS</h2>
+                        <p>CSS is the language we use to style an HTML document.
+                            CSS describes how HTML elements should be displayed. 
+                            This tutorial will teach you CSS from basic to advanced.
+                            </p>
+                            <a href="#"><i class="fa-brands fa-css3-alt"></i></a>
+                    </div>
+                        
+                </div>
+                <div class="work">
+                    <img src="javascript logo.png" >
+                    <div class="layer">
+                        <h2>JavaScript </h2>
+                        <p>JavaScript is the world's most popular programming language.
+                            JavaScript is the programming language of the Web.                           
+                            JavaScript is easy to learn.                           
+                            This tutorial will teach you JavaScript from basic to advanced.</p>
+                            <a href="#"><i class="fa-brands fa-js"></i></a>
+                       </div>     
+                </div>
+            </div>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+    </div>
+
+    <div class="container">
+        <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+        <div class="testimonial">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>Top-notch instruction, practical projects, and great support at MetHat. Highly recommended!
+                Fast-track to success
+            </p>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <img src="arjun.jpg" alt="">
+            <h3>arjugurupadham</h3>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="testimonial">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>Incredible learning experience. Expert instructors. Real-world skills. MetHat delivers
+            </p>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <img src="ammu.jpg" alt="">
+            <h3>__.nima__</h3>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="testimonial">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>Best decision ever! MetHat made web development accessible and exciting.
+                Game-changing skills in record time
+            </p>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <img src="tharun.jpg" alt="">
+            <h3>madlivinston</h3>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="testimonial">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>Focused curriculum, supportive staff. Graduated job-ready. Thank you, MetHat
+            </p>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <img src="sibi.jpg" alt="">
+            <h3>sibinchikues</h3>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="testimonial">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>Efficient, effective, and career-changing. MetHat sets the standard.
+                Web development made easy. Thank you
+            </p>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <img src="sudhi.jpg" alt="">
+            <h3>sudeeshandrews</h3>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="testimonial">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>Learned more in weeks than in years elsewhere. Kudos to MetHat
+            </p>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <img src="aneesh.jpg" alt="">
+            <h3>aneesh.dasan.1</h3>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="testimonial">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>Short on time, big on results. MetHat is the real deal in web dev education.
+                Career-ready in no time
+            </p>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <img src="riyas.jpg" alt="">
+            <h3>riyas__n</h3>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="testimonial">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>Dynamic courses, expert mentors - MetHat rocks
+            </p>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <img src="sowmya.jpg" alt="">
+            <h3>sowmya.v098</h3>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="testimonial">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>Quick, practical, career-focused. MetHat delivers skills that matter.
+            </p>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <img src="abhi.jpg" alt="">
+            <h3>abhikrishna251</h3>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="testimonial">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>No fluff, just skills. MetHat = web dev success Practical, relevant, and career-focused
+                 Thanks
+            </p>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <img src="reshma.jpg" alt="">
+            <h3>z.xa_ra</h3>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="testimonial">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>Elevated my skills fast. Grateful for MetHat
+            </p>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <img src="karun.jpg" alt="">
+            <h3>aesthete_000_</h3>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="testimonial">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>Web dev simplified. Thumbs up, MetHat
+                Elevated my skills fast
+            </p>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <img src="adith.jpg" alt="">
+            <h3>the_smile_killer_o_o</h3>
+        </div>
+      </div>
+     
+    </div>
+    <div class="swiper-pagination">
+        <div class="testimonial">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>Short program, big impact. Thanks, MetHat
+            </p>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <img src="tharun.jpg" alt="">
+            <h3>soorya</h3>
+        </div>
+    </div>
+  </div>
+
+
+    </div>
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">contact me</h1> 
+                <p><i class="fa-solid fa-envelope"></i>methatacademy@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>9744658403</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61552583365229&mibextid=kFxxJD"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/methat_academy?igsh=eWhpdGhqemoyZWZp"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://youtube.com/@MetHatAcademy?si=_SX43SE6VoBivABX"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://x.com/MetHat_Academy?t=d_5XqDb2oGxqUDybasXTow&s=09"><i class="fa-brands fa-square-x-twitter"></i></a>
+                </div>
+                <a href="my-cv.pdf" download class="btn btn2">Downloards</a>
+                <a href="https://wa.me/+919744658403" target="_blank" class="msg-btn">Whatsapp chat</a>
+                </div>
+                
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <input type="tel" name="Number" placeholder="Your Mobile Number" required>
+                        <textarea name="Message"  rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p><i class="fa-regular fa-copyright"></i>  Copyright methat academy 2024</p>
+        </div>
+    </div>
+   
+   </script>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right ="0";
+        }
+        function closemenu(){
+            sidemenu.style.right ="-200px";
+        }
+        
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbytXGx77td6aPQy70a6mQroFEXeKcpIBwWDAozC7EhxD-ltRFs7Kdenp2hkJ_VDddCIqw/exec'
+        const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent succesfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('.auto-type', {
+      strings: ['Lifetime support', '1:1 Live Doubt solving','Personal Mentorship','Project based classes'],
+      typeSpeed: 100,
+      backspeed: 100,
+      loop: true
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {  
+      slidesPerView: 1,
+      spaceBetween: 10,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      autoplay: {
+    delay: 1500,
+    dissableOninteraction: false,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 50,
+        },
+      },
+    });
+  </script>
+</body>
+
+</html> 
