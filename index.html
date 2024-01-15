@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6bfe4e2f36.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo met.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="head-row">
+                <div class="head-col-1">
+            <div class="header-text">  
+                <div class="title"> 
+                <h2>Let's <br>Build Your <span>Future!</span></h2> 
+            </div>   
+             
+                <br>
+                <h2><span class="auto-type"></span></h2>
+            </div>
+            <a href="" class="head-btn1">Build Your Website</a>
+            <a href="" class="head-btn2">Learn Web Development</a>
+        </div>
+       
+        <div class="head-col-2">
+            <div class="container-clk">
+            <div class="clock">
+                <span id="hrs">00</span>
+                <span>:</span>
+                <span id="min">00</span>
+                <span>:</span>
+                <span id="sec">00</span>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+        </div>
+    </div>
+    </div>
+
+   
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('.auto-type', {
+      strings: ['Lifetime support', '1:1 Live Doubt solving','Personal Mentorship','Project based classes'],
+      typeSpeed: 100,
+      backspeed: 100,
+      loop: true
+    });
+  </script>
+ 
+  <script>
+ let hrs = document.getElementById("hrs");
+ let min = document.getElementById("min");
+ let sec = document.getElementById("sec");
+
+ setInterval(()=>{
+    let currentTime = new Date();
+
+ hrs.innerHTML = (currentTime.getHours()<10?"0":"") + currentTime.getHours();
+ min.innerHTML = (currentTime.getMinutes()<10?"0":"") + currentTime.getMinutes();
+ sec.innerHTML = (currentTime.getSeconds()<10?"0":"") + currentTime.getSeconds();
+ },1000)
+
+ let currentTime = new Date();
+ hrs.innerHTML = currentTime.getHours();
+ min.innerHTML = currentTime.getMinutes();
+ sec.innerHTML = currentTime.getSeconds();
+  </script>
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right ="0";
+        }
+        function closemenu(){
+            sidemenu.style.right ="-200px";
+        }
+
+  </script>
+</body>
+</html>
