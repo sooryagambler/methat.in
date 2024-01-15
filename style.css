@@ -195,12 +195,12 @@ justify-content: center;
         cursor: pointer;
 }
 .head-btn1{
-    margin-top: 100px;
+    margin-top: 70px;
 }
 .container-clk{
     width: 300px;
     height: 80px;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 .clock span{
     font-size: 40px;
