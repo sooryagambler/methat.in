@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>methat</title>
+    <link rel="stylesheet" href="website-style.css">
+    <script src="https://kit.fontawesome.com/6bfe4e2f36.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div id="header">
+       
+        <div class="container">
+            <video autoplay loop class="back-video" muted plays-inline>
+                <source src="video (2160p) (1).mp4" type="video/mp4">
+            </video>
+
+            <nav>
+                <img src="logo met.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">  
+                <div class="title"> 
+                <h2 data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" class="contact-right">Build  <br>Your <span> Website</span></h2> 
+            </div>   
+             
+                  
+                
+                <h1 data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" class="contact-right">Starts from ₹3500 <span></span> </h1>
+                <br>
+                <h3 data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" class="contact-right">A website is your online business card <br> make it impressive. <span></span> </h3>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+  <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right ="0";
+        }
+        function closemenu(){
+            sidemenu.style.right ="-200px";
+        }
+        
+    </script>  
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
